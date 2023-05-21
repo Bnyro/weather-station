@@ -5,7 +5,7 @@
 #include <SFE_BMP180.h>
 #include <Wire.h>
 #include <DHT.h>
-#inclue "config.h"
+#include "config.h"
 
 // Config file content:
 // const char* ssid      = "";
