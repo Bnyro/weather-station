@@ -24,7 +24,7 @@ func Connect() error {
 		panic(err)
 	}
 
-	Database.AutoMigrate(&entities.Event{}, &entities.WeatherData{})
+	Database.AutoMigrate(&entities.WeatherData{})
 
 	return nil
 }

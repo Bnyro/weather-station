@@ -30,12 +30,9 @@ func main() {
 	app.Route("/api", func(api chi.Router) {
 		api.Get("/", func(w http.ResponseWriter, r *http.Request) {
 			utilities.WriteJsonStatus(w, http.StatusOK, entities.Message{
-				Message: "API online",
+				Message: "API online.",
 			})
 		})
-		api.Get("/events", handlers.GetEvents)
-		api.Post("/events", handlers.CreateEvent)
-		api.Delete("/events", handlers.DeleteEvent)
 
 		api.Get("/weather", handlers.GetWeatherData)
 		api.Post("/weather", handlers.CreateWeatherData)
